@@ -11,8 +11,9 @@ app.get('/phones/:id',(req,res)=>
 {
 const id=parseInt(req.params.id);
 const phone=phones.find(phone=>phone.id===id)|| {};
-console.log(id);
-res.send(phone)
+console.log(phone);//show data in console
+res.send(phone)//show data in the specipic path in browser
+
 
 
 })
